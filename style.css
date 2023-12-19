@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* reset styles */
+* {
+    color: inherit;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /*1rem = 10px*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/*desktop styles*/
+
+.body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 1600px;
+}
+
+.header {
+    line-height: 21.4rem;
+    text-align: center;
+    width: 100%;
+    background-color: #EA5E32;
+    color: #fff;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav {
+    flex: 1;
+    text-align: center;
+    line-height: 92.3rem;
+    margin: 2.2rem 0;
+    border-top-right-radius: 2.8rem;
+    border-bottom-right-radius: 2.8rem;
+    background-color: #FFB40A;
+}
+
+.main {
+    flex: 2.4;
+    margin: 2.2rem 6.6rem;
+}
+
+.content-title {
+    line-height: 5.8rem;
+    letter-spacing: 0.064rem;
+    margin: 2.4rem 0 0.6rem 0;
+}
+
+.content-text {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.048rem;
+    margin-bottom: 2.9rem;
+}
+
+
+.links {
+    flex: 1;
+    text-align: center;
+    line-height: 92.3rem;
+    margin: 2.2rem 0;
+    border-top-left-radius: 2.8rem;
+    border-bottom-left-radius: 2.8rem;
+    background-color: #FFD36F;
+}
+
+.footer {
+    text-align: center;
+    line-height: 21.4rem;
+    width: 100%;
+    background-color: #A82800;
+    color: #fff;
+}
+
+/*mobile styles*/
+
+@media screen and (max-width: 960px) {
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .nav-title,
+    .links-title {
+        margin-left: 3.3rem;
+    }
+
+    .nav {
+        flex: 100%;
+        text-align: start;
+        line-height: 10.9rem;
+        margin: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 2.8rem;
+        border-bottom-right-radius: 2.8rem;
+    }
+
+    .main {
+        flex: 100%;
+        text-align: start;
+        margin: 1.6rem 3.3rem 0 3.3rem;
+        height: auto;
+    }
+
+    .links {
+        flex: 100%;
+        text-align: start;
+        line-height: 10.9rem;
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 2.8rem;
+        border-top-right-radius: 2.8rem;
+    }
+}
